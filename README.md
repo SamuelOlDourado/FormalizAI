@@ -11,7 +11,6 @@ A ferramenta ajuda usuários a escreverem e-mails, mensagens profissionais e com
 - Reescrita de mensagens utilizando Inteligência Artificial
 - Escolha de contexto da mensagem:
   - E-mail
-  - WhatsApp Business
   - LinkedIn
   - Comunicado interno
 
@@ -38,7 +37,6 @@ A ferramenta ajuda usuários a escreverem e-mails, mensagens profissionais e com
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
 
 ### Back-end
 
