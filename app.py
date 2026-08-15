@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-MODELO = "llama-3.3-70b-versatile"
+MODELO = "openai/gpt-oss-120b"
 
 CONTEXTOS = {
     "email": (
@@ -138,11 +138,9 @@ descrevendo objetivamente as principais mudanças feitas em relação ao texto o
 
 
 def extrair_json(conteudo: str) -> dict:
-    """Remove possíveis blocos de código markdown e faz o parse do JSON retornado pelo modelo."""
 
     texto = conteudo.strip()
 
-    # remove cercas de bloco de código tipo ```json ... ``` ou ``` ... ```
     texto = re.sub(r"^```(json)?", "", texto).strip()
     texto = re.sub(r"```$", "", texto).strip()
 
